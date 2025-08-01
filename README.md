@@ -2,7 +2,10 @@
 自用 django starter kit, fork from sidewinder
 
 # todos after init
-
+- [ ] remove geo part
+- [ ] add tailwind, prelineui
+- [ ] add captain-denifitin, Dockerfile
+- [ ] add whitenoise
 
 # features
 > Configured Django on your own server in 10 minutes.
