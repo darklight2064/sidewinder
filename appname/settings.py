@@ -28,7 +28,6 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "django.contrib.sites",
     "django.contrib.flatpages",
-    "django.contrib.gis",
     "django.forms",
     "django_extensions",
     "allauth",
