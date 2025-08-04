@@ -3,8 +3,9 @@
 
 # todos after init
 - [ ] remove geo part
-- [ ] add tailwind, prelineui
-- [ ] add captain-denifitin, Dockerfile
+- [ ] add tailwind, preline
+
+- [x] add captain-denifitin, Dockerfile
 - [ ] add whitenoise
  tailwind input.css move to static_build
  whitenoise 会 compress all css file, and input.css would make error, so move it
