@@ -9,6 +9,8 @@
  tailwind input.css move to static_build
  whitenoise 会 compress all css file, and input.css would make error, so move it
  npx @tailwindcss/cli -i ./static_build/css/input.css -o ./static/css/output.css --watch
+- [ ] django-cotton
+- [x] alpine.js
 
 # features
 > Configured Django on your own server in 10 minutes.
