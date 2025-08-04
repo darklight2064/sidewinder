@@ -2,16 +2,17 @@
 自用 django starter kit, fork from sidewinder
 
 # todos after init
-- [ ] remove geo part
-- [ ] add tailwind, preline
-
+- [x] remove geo part
+- [x] add tailwind, preline
+    - pnpm i preline
 - [x] add captain-denifitin, Dockerfile
-- [ ] add whitenoise
+- [x] add whitenoise
  tailwind input.css move to static_build
  whitenoise 会 compress all css file, and input.css would make error, so move it
  npx @tailwindcss/cli -i ./static_build/css/input.css -o ./static/css/output.css --watch
-- [ ] django-cotton
+
 - [x] alpine.js
+- [ ] django-cotton
 
 # features
 > Configured Django on your own server in 10 minutes.
