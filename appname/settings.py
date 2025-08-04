@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     "huey_monitor",
     "dbbackup",
     "appname.core",
+    "django_cotton"
 ]
 
 if DEBUG:
