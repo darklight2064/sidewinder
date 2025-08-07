@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(uv run python manage.py runcommand)",
+      "Bash(uv run python -c \"import posthog; print(''PostHog version:'', posthog.__version__)\")"
+    ],
+    "deny": []
+  }
+}

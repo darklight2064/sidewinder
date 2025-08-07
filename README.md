@@ -13,6 +13,8 @@
 
 - [x] alpine.js
 - [ ] django-cotton
+ - all under cotton dir
+- [ ] add PostHog
 
 # features
 > Configured Django on your own server in 10 minutes.

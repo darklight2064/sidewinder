@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     "bx_django_utils",
     "huey_monitor",
     "dbbackup",
-    "appname.core",
+    "appname.core.apps.CoreAppConfig",
     "django_cotton"
 ]
 
@@ -68,6 +68,7 @@ MIDDLEWARE = [
     "django.contrib.flatpages.middleware.FlatpageFallbackMiddleware",
     "django_structlog.middlewares.RequestMiddleware",
     "allauth.account.middleware.AccountMiddleware",
+    "posthog.integrations.django.PosthogContextMiddleware",
 ]
 
 if DEBUG:
@@ -212,6 +213,15 @@ if env.bool("DJANGO_SSL", True):
     SESSION_COOKIE_SECURE = True
     CSRF_COOKIE_SECURE = True
     SECURE_SSL_REDIRECT = True
+
+# PostHog settings
+POSTHOG_API_KEY = env.str("POSTHOG_API_KEY", default=None)
+POSTHOG_HOST = env.str("POSTHOG_HOST", default="https://us.i.posthog.com")
+
+if POSTHOG_API_KEY:
+    import posthog
+    posthog.api_key = POSTHOG_API_KEY
+    posthog.host = POSTHOG_HOST
 
 # DJANGO-ALLAUTH
 
