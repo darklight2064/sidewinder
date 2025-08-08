@@ -2,7 +2,10 @@
   "permissions": {
     "allow": [
       "Bash(uv run python manage.py runcommand)",
-      "Bash(uv run python -c \"import posthog; print(''PostHog version:'', posthog.__version__)\")"
+      "Bash(uv run python -c \"import posthog; print(''PostHog version:'', posthog.__version__)\")",
+      "Bash(cat init.sh)",
+      "Bash(chmod +x /Users/zheng/Downloads/projects/sidewinder-template/init.sh)",
+      "Bash(find /Users/zheng/Downloads/projects/sidewinder-template -name \"*.env*\" -type f)"
     ],
     "deny": []
   }
